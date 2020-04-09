@@ -22,7 +22,7 @@ def error(update,context):
     logger.warning('Update "%s" caused "%s" error',update,context.error)
     
 def main():
-    updater = Updater("1002731806:AAF2Il5Q-h7IHwtHcXNv76ahBIN_c17pM0g", use_context = True)
+    updater = Updater("Bot Handle", use_context = True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start",start))
     dp.add_handler(MessageHandler(Filters.text,pred))
